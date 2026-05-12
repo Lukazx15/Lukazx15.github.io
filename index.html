@@ -23,8 +23,10 @@
   <!-- Navigation -->
   <nav class="bg-white shadow-sm sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-3 py-3 flex justify-between items-center">
-      <img src="Images/Logo.jpg" alt="Logo" class="h-10 w-10 rounded-full ">
-      <a href="index.html" class="text-2xl font-bold text-blue-600">My Portfolio</a>
+      <div class="flex items-center space-x-3">
+        <img src="Images/Logo.jpg" alt="Logo" class="h-10 w-10 rounded-full">
+        <a href="index.html" class="text-2xl font-bold text-blue-600">My Portfolio</a>
+      </div>
       <ul class="flex space-x-4 nav-links">
         <li><a href="index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a></li>
         <li><a href="projects.html" class="text-gray-600 hover:text-blue-600 transition">Projects</a></li>
@@ -38,15 +40,15 @@
   <section class="max-w-6xl mx-auto px-4 py-20">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
       <div>
-        <h1 class="text-5xl font-bold text-gray-900 mb-4">Hi, I'm a Developer</h1>
-        <p class="text-xl text-gray-600 mb-6">I create beautiful, responsive web applications with modern technologies. Welcome to my portfolio.</p>
+        <h1 class="text-5xl font-bold text-gray-900 mb-4">Hi, I'm Nantthanan</h1>
+        <p class="text-xl text-gray-600 mb-6">I'm interested in web development and programming. I'm a student at KMITL.I'm studying Computer Engineering and Cybersecurity.</p>
         <div class="flex space-x-4">
           <a href="projects.html" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition">View My Work</a>
           <a href="contact.html" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-lg font-semibold transition">Get in Touch</a>
         </div>
       </div>
       <div class="flex justify-center">
-        <div class="w-64 h-64 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg"></div>
+        <img src="Images/Profile.jpg" alt="Profile Image" class="w-64 h-64 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg">
       </div>
     </div>
   </section>
@@ -56,33 +58,23 @@
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-4xl font-bold text-gray-900 mb-4 text-center">Featured Projects</h2>
       <p class="text-gray-600 text-center mb-12">Check out some of my recent work</p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Project Card 1 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Project Card  -->
         <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
           <div class="h-40 bg-gradient-to-r from-blue-400 to-blue-600"></div>
           <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Project One</h3>
-            <p class="text-gray-600 mb-4">A responsive web application built with React and Tailwind CSS.</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">E-Commerce Platform</h3>
+            <p class="text-gray-600 mb-4">A full-stack platform with user authentication, shopping cart, and payment integration.</p>
             <a href="projects.html" class="text-blue-600 hover:text-blue-700 font-semibold">View Details →</a>
           </div>
         </div>
 
-        <!-- Project Card 2 -->
         <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
           <div class="h-40 bg-gradient-to-r from-purple-400 to-purple-600"></div>
           <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Project Two</h3>
-            <p class="text-gray-600 mb-4">An interactive dashboard with real-time data visualization.</p>
-            <a href="projects.html" class="text-blue-600 hover:text-blue-700 font-semibold">View Details →</a>
-          </div>
-        </div>
-
-        <!-- Project Card 3 -->
-        <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-          <div class="h-40 bg-gradient-to-r from-pink-400 to-pink-600"></div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Project Three</h3>
-            <p class="text-gray-600 mb-4">A mobile-first e-commerce platform with payment integration.</p>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Real-Time Dashboard</h3>
+            <p class="text-gray-600 mb-4">An interactive analytics dashboard with real-time data visualization.</p>
             <a href="projects.html" class="text-blue-600 hover:text-blue-700 font-semibold">View Details →</a>
           </div>
         </div>
@@ -95,29 +87,24 @@
 
   <!-- Skills Preview -->
   <section class="py-20">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-4xl font-bold text-gray-900 mb-4 text-center">My Skills</h2>
+    <div class="max-w-6xl mx-auto px-3 py-3 main-content">
+      <h2 class="text-3xl font-bold text-gray-900 mb-3 text-center">My Skills</h2>
       <p class="text-gray-600 text-center mb-12">Technologies and tools I work with</p>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
         <div class="bg-white p-6 rounded-lg shadow-md text-center">
           <div class="text-4xl mb-2">🎨</div>
           <h3 class="text-lg font-bold text-gray-900">Frontend</h3>
-          <p class="text-gray-600 text-sm">React, Vue.js, Tailwind</p>
+          <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, React</p>
         </div>
         <div class="bg-white p-6 rounded-lg shadow-md text-center">
           <div class="text-4xl mb-2">⚙️</div>
           <h3 class="text-lg font-bold text-gray-900">Backend</h3>
-          <p class="text-gray-600 text-sm">Node.js, Python, Express</p>
+          <p class="text-gray-600 text-sm">Node.js, Python, TypeScript</p>
         </div>
         <div class="bg-white p-6 rounded-lg shadow-md text-center">
           <div class="text-4xl mb-2">🛠️</div>
-          <h3 class="text-lg font-bold text-gray-900">Tools</h3>
+          <h3 class="text-lg font-bold text-gray-900">Tools</h3>  
           <p class="text-gray-600 text-sm">Git, Docker, VS Code</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md text-center">
-          <div class="text-4xl mb-2">🚀</div>
-          <h3 class="text-lg font-bold text-gray-900">DevOps</h3>
-          <p class="text-gray-600 text-sm">AWS, CI/CD, GitHub</p>
         </div>
       </div>
       <div class="text-center mt-12">
@@ -130,7 +117,7 @@
   <section class="bg-blue-600 py-20">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <h2 class="text-4xl font-bold text-white mb-4">Let's Work Together</h2>
-      <p class="text-xl text-blue-100 mb-8">I'm always open to new projects and opportunities.</p>
+      <p class="text-xl text-blue-100 mb-8">I'm always open to new projects and opportunities <strong>(มึงอยากได้คนกูอยากได้งาน)</strong> .</p>
       <a href="contact.html" class="inline-block bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition">Get in Touch</a>
     </div>
   </section>

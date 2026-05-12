@@ -3,20 +3,229 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills - My Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Document</title>
+  <style>
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none !important;
+        }
+        .mobile-hamburger {
+          display: flex !important;
+        }
+        .main-content {
+          margin: 15px 10px !important;
+        }
+      }
+  </style>
 </head>
-<body>
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="#" class="text-2xl font-bold text-blue-600">My Portfolio</a>
-      <ul class="flex space-x-8">
-        <li><a href="" class="text-gray-600 hover:text-blue-600 transition">Home</a></li>
+<body class="bg-gray-50">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-3 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-3">
+        <img src="Images/Logo.jpg" alt="Logo" class="h-10 w-10 rounded-full">
+        <a href="index.html" class="text-2xl font-bold text-blue-600">My Portfolio</a>
+      </div>
+      <ul class="flex space-x-4 nav-links">
+        <li><a href="index.html" class="text-gray-600 hover:text-blue-600 transition">Home</a></li>
         <li><a href="projects.html" class="text-gray-600 hover:text-blue-600 transition">Projects</a></li>
-        <li><a href="skills.html" class="text-gray-600 hover:text-blue-600 transition">Skills</a></li>
+        <li><a href="skills.html" class="text-gray-600 hover:text-blue-600 transition font-bold">Skills</a></li>
         <li><a href="contact.html" class="text-gray-600 hover:text-blue-600 transition">Contact</a></li>
       </ul>
     </div>
   </nav>
+
+  <!-- Skills Header -->
+  <section class="bg-blue-600 text-white py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h1 class="text-5xl font-bold mb-4">My Skills & Expertise</h1>
+      <p class="text-xl text-blue-100">Technologies and tools I specialize in</p>
+    </div>
+  </section>
+
+  <!-- Skills Content -->
+  <section class="max-w-6xl mx-auto px-4 py-20">
+    <!-- Frontend Skills -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8">Frontend Development</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">React</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-blue-600 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Vue.js</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-green-600 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">HTML/CSS</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-purple-600 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Tailwind CSS</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-cyan-600 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">JavaScript</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-yellow-500 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">TypeScript</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-blue-500 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Backend Skills -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8">Backend Development</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Node.js</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-green-600 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Express.js</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-gray-600 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Python</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-blue-600 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">MongoDB</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-green-700 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">PostgreSQL</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-blue-700 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Django</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-green-800 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools & DevOps -->
+    <div class="mb-16">
+      <h2 class="text-3xl font-bold text-gray-900 mb-8">Tools & DevOps</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Git/GitHub</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-red-600 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Docker</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-blue-400 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">AWS</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-orange-500 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">CI/CD</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-purple-600 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">VS Code</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-blue-600 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-3">Figma</h3>
+          <div class="w-full bg-gray-200 rounded-full h-2 mb-2">
+            <div class="bg-purple-500 h-2 rounded-full" style="width: 0%"></div>
+          </div>
+          <p class="text-gray-600 text-sm">none </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Skills -->
+    <div>
+      <h2 class="text-3xl font-bold text-gray-900 mb-8">Additional Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Soft Skills</h3>
+          <ul class="text-gray-600 space-y-2">
+            <li>✓ Problem Solving</li>
+            <li>✓ Team Collaboration</li>
+            <li>✓ Communication</li>
+            <li>✓ Project Management</li>
+            <li>✓ Agile/Scrum</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Other Technologies</h3>
+          <ul class="text-gray-600 space-y-2">
+            <li> REST API Design</li>
+            <li>✓ GraphQL</li>
+            <li>✓ Firebase</li>
+            <li>✓ Testing & Debugging</li>
+            <li>✓ UI/UX Design Basics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
