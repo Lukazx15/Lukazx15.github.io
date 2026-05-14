@@ -13,13 +13,25 @@
         .mobile-hamburger {
           display: flex !important;
         }
+        .mobile-menu {
+          display: none !important;
+        }
+        .mobile-menu.active {
+          display: flex !important;
+        }
         .main-content {
           margin: 15px 10px !important;
         }
       }
   </style>
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('active');
+    }
+  </script>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 flex flex-col min-h-screen">
   <!-- Navigation -->
   <nav class="bg-white shadow-sm sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-3 py-3 flex justify-between items-center">
@@ -33,9 +45,23 @@
         <li><a href="skills.html" class="text-gray-600 hover:text-blue-600 transition">Skills</a></li>
         <li><a href="contact.html" class="text-gray-600 hover:text-blue-600 transition font-bold">Contact</a></li>
       </ul>
+      <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="mobile-hamburger hidden flex-col cursor-pointer">
+        <span class="w-6 h-0.5 bg-gray-600 mb-1.5"></span>
+        <span class="w-6 h-0.5 bg-gray-600 mb-1.5"></span>
+        <span class="w-6 h-0.5 bg-gray-600"></span>
+      </button>
+    </div>
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="mobile-menu hidden flex-col bg-white border-t border-gray-200 w-full">
+      <a href="index.html" class="px-3 py-3 text-gray-600 hover:text-blue-600 transition border-b">Home</a>
+      <a href="projects.html" class="px-3 py-3 text-gray-600 hover:text-blue-600 transition border-b">Projects</a>
+      <a href="skills.html" class="px-3 py-3 text-gray-600 hover:text-blue-600 transition border-b">Skills</a>
+      <a href="contact.html" class="px-3 py-3 text-gray-600 hover:text-blue-600 transition font-bold">Contact</a>
     </div>
   </nav>
 
+  <!-- Main Content -->
+  <main class="flex-grow">
   <!-- Contact Header -->
   <section class="bg-blue-600 text-white py-16">
     <div class="max-w-6xl mx-auto px-4 text-center">
@@ -51,8 +77,8 @@
       <div class="bg-white rounded-lg shadow-md p-8 text-center">
         <div class="text-5xl mb-4">✉️</div>
         <h3 class="text-2xl font-bold text-gray-900 mb-2">Email</h3>
-        <p class="text-gray-600 mb-4">your.email@example.com</p>
-        <a href="mailto:your.email@example.com" class="text-blue-600 hover:text-blue-700 font-semibold">Send Email</a>
+        <p class="text-gray-600 mb-4">nattananpunpetch@gmail.com</p>
+        <a href="mailto:nattananpunpetch@gmail.com" class="text-blue-600 hover:text-blue-700 font-semibold">Send Email</a>
       </div>
 
       <!-- Contact Info Card 2 -->
@@ -60,7 +86,7 @@
         <div class="text-5xl mb-4">💼</div>
         <h3 class="text-2xl font-bold text-gray-900 mb-2">LinkedIn</h3>
         <p class="text-gray-600 mb-4">Connect with me on LinkedIn</p>
-        <a href="#" class="text-blue-600 hover:text-blue-700 font-semibold">Visit Profile</a>
+        <a href="https://www.linkedin.com/in/lucky-man-573b99397/" class="text-blue-600 hover:text-blue-700 font-semibold">Visit Profile</a>
       </div>
 
       <!-- Contact Info Card 3 -->
@@ -68,25 +94,11 @@
         <div class="text-5xl mb-4">🐙</div>
         <h3 class="text-2xl font-bold text-gray-900 mb-2">GitHub</h3>
         <p class="text-gray-600 mb-4">Check out my repositories</p>
-        <a href="#" class="text-blue-600 hover:text-blue-700 font-semibold">View GitHub</a>
+        <a href="https://github.com/Lukazx15" class="text-blue-600 hover:text-blue-700 font-semibold">View GitHub</a>
       </div>
     </div>
   </section>
-
-  <!-- Social Links Section -->
-  <section class="bg-gray-100 py-16">
-    <div class="max-w-6xl mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold text-gray-900 mb-8">Follow Me</h2>
-      <div class="flex justify-center space-x-8">
-        <a href="#" class="w-12 h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center transition text-2xl">f</a>
-        <a href="#" class="w-12 h-12 bg-blue-400 hover:bg-blue-500 text-white rounded-full flex items-center justify-center transition">𝕏</a>
-        <a href="#" class="w-12 h-12 bg-pink-600 hover:bg-pink-700 text-white rounded-full flex items-center justify-center transition">📷</a>
-        <a href="#" class="w-12 h-12 bg-red-600 hover:bg-red-700 text-white rounded-full flex items-center justify-center transition">▶</a>
-        <a href="#" class="w-12 h-12 bg-gray-900 hover:bg-gray-800 text-white rounded-full flex items-center justify-center transition">🐙</a>
-      </div>
-    </div>
-  </section>
-
+  </main>
   <!-- Footer -->
   <footer class="bg-gray-900 text-gray-400 py-8">
     <div class="max-w-6xl mx-auto px-4 text-center">
@@ -94,13 +106,5 @@
     </div>
   </footer>
 
-  <script>
-    // Simple form submission handling
-    document.querySelector('form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      alert('Thank you for your message! I will get back to you soon.');
-      this.reset();
-    });
-  </script>
 </body>
 </html>
